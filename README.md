@@ -9,7 +9,7 @@ O Cat&Dog é um sistema web de gerenciamento de pet shop que foi realizado com o
 - **Cadastro de Usuários e Animais**: Registre clientes e animais
 - **Solicitação de Serviços**: Solicite serviços como banho, tosa.
 - **Compra de produtos**: Capaz de realizar compras de produtos que chegam no seu endereço de graça!!!
-- **Administração**: Administradores são capazes de gerenciar, editar, excluir e finalizar serviços.
+- **Administração**: Administradores são capazes de gerenciar, editar, excluir e finalizar serviços através de uma tabela.
 
 ## 🛠️ Tecnologias Utilizadas
 
