@@ -1,4 +1,4 @@
-# 🐾 Cat&Dog - Sistema simples de Gestão para Pet Shop
+# 🐾 Cat&Dog 
 
 ## 🚀 Sobre
 O Cat&Dog é um sistema web de gerenciamento de pet shop que foi realizado com objetivo de obtenção de nota para a disciplina de Linguagem de Programação Visual.
