@@ -1,0 +1,160 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden; 
+}
+
+
+.login-container {
+  display: flex;
+  height: 100vh;
+  max-width: 100vw;
+}
+
+
+.login-left {
+  flex: 1;
+  padding: 40px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-left img.logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.login-left h2 {
+  color: #4CAF50;
+  margin-bottom: 30px;
+}
+
+.login-left form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-left form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.login-left form input {
+  margin-bottom: 20px;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.login-left form button {
+  padding: 12px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-left form button:hover {
+  background-color: #45a049;
+}
+
+.login-left p {
+  margin-top: 20px;
+  color: #555;
+  text-align: center;
+}
+
+.login-left p a {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-left p a:hover {
+  text-decoration: underline;
+}
+
+
+.login-right {
+  flex: 1;
+  background-image: url('images/cats-and-dogs.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column; 
+  }
+
+  .login-left {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  .login-right {
+    display: none; 
+  }
+}
+
+@media (max-width: 480px) {
+  .login-left {
+    padding: 20px;
+  }
+
+  .login-left h2 {
+    font-size: 1.5rem;
+  }
+
+  .login-left form input, .login-left form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+  #adminTableContainer {
+  margin: 20px;
+}
+
+.modal-body .form-control {
+  margin-bottom: 10px;
+}
+
+.modal-footer {
+  justify-content: space-between;
+}
+
+button.finalize-service, button.edit-service, button.delete-service, button.contact-whatsapp {
+  margin: 0 5px;
+}
+}
+#adminTableContainer {
+  margin: 20px;
+}
+
+.modal-body .form-control {
+  margin-bottom: 10px;
+}
+
+.modal-footer {
+  justify-content: space-between;
+}
+
+button.finalize-service, button.edit-service, button.delete-service, button.contact-whatsapp {
+  margin: 0 5px;
+}

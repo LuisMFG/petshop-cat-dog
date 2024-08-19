@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/stylesReg.css">
+  <title>Criar Conta</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>CRIAR CONTA</h2>
+      <p>Preencha os dados para criar sua conta.</p>
+    </div>
+    <form id="registerForm">
+      <div class="row">
+        <div class="column">
+          <label for="name">Nome Completo:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="column">
+          <label for="regUsername">Usuário:</label>
+          <input type="text" id="regUsername" name="username" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <label for="cpf">CPF:</label>
+          <input type="text" id="cpf" name="cpf" required>
+        </div>
+        <div class="column">
+          <label for="telefone">Telefone:</label>
+          <input type="text" id="telefone" name="telefone" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <label for="cep">CEP:</label>
+          <input type="text" id="cep" name="cep" required>
+        </div>
+        <div class="column">
+          <label for="logradouro">Logradouro:</label>
+          <input type="text" id="logradouro" name="logradouro" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <label for="bairro">Bairro:</label>
+          <input type="text" id="bairro" name="bairro" required>
+        </div>
+        <div class="column">
+          <label for="cidade">Cidade:</label>
+          <input type="text" id="cidade" name="cidade" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <label for="estado">Estado:</label>
+          <input type="text" id="estado" name="estado" required>
+        </div>
+        <div class="column">
+          <label for="regPassword">Senha:</label>
+          <div class="password-container">
+            <input type="password" id="regPassword" name="password" required>
+            <span class="password-toggle" onclick="togglePasswordVisibility()">👁️</span>
+          </div>
+        </div>
+      </div>
+      <div class="submit-row">
+        <button type="submit" href = "index.html" >Criar conta</button>
+      </div>
+    </form>
+  </div>
+  <script src="js/register.js"></script>
+  <script>
+    function togglePasswordVisibility() {
+      const passwordInput = document.getElementById('regPassword');
+      const passwordToggle = document.querySelector('.password-toggle');
+      if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        passwordToggle.textContent = '🙈';
+      } else {
+        passwordInput.type = 'password';
+        passwordToggle.textContent = '👁️';
+      }
+    }
+  </script>
+</body>
+
+</html>

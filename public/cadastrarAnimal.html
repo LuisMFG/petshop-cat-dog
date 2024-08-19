@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/stylesCadastro.css">
+    <title>Cadastrar Animal</title>
+    <style>
+        body {
+          background-image: url('images/backgroundCat&Dog.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-position: center;
+          margin: 0;
+          padding: 0;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="header">
+        <h2>CADASTRAR ANIMAL</h2>
+        <img src="images/logo definitiva.png" alt="Cat&Dog Logo" class="logo" />
+      </div>
+      <form id="petForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="petName">Nome do animal</label>
+            <input type="text" id="petName" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="petType">Tipo</label>
+            <select id="petType" name="type" required>
+              <option value="Cachorro">Cachorro</option>
+              <option value="Gato">Gato</option>
+              <option value="Outro">Outro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="petSexo">Sexo</label>
+            <select id="petSexo" name="sexo" required>
+              <option value="Macho">Macho</option>
+              <option value="Fêmea">Fêmea</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="petRaca">Raça</label>
+            <input type="text" id="petRaca" name="raca" />
+          </div>
+          <div class="form-group">
+            <label for="petIdade">Idade</label>
+            <input type="number" id="petIdade" name="idade" />
+          </div>
+          <div class="form-group">
+            <label for="petAlergia">Alergia</label>
+            <input type="text" id="petAlergia" name="alergia" />
+          </div>
+        </div>
+        <div class="form-row">
+          <button type="submit" class="btn-submit">Cadastrar</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="js/pet.js"></script>
+  </body>
+</html>

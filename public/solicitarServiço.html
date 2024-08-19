@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesCadastro.css">
+    <title>Solicitar Serviço</title>
+    <style>
+        body {
+          background-image: url('images/backgroundCat&Dog.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-position: center;
+          margin: 0;
+          padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="header">
+            <h2>SOLICITAR SERVIÇO</h2>
+            <img src="images/logo definitiva.png" alt="Cat&Dog Logo" class="logo">
+        </div>
+        <form id="serviceForm">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="petId">Id do animal</label>
+                    <select id="petId" name="petId" required>
+                        <option value="" disabled selected>Selecione seu animal</option>
+                        
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="serviceType">Tipo de serviço</label>
+                    <select id="serviceType" name="serviceType" required>
+                        <option value="Banho">Banho</option>
+                        <option value="Tosa">Tosa</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="taxiPet">Táxi Pet</label>
+                    <select id="taxiPet" name="taxiPet" required>
+                        <option value="Sim">Sim</option>
+                        <option value="Não">Não</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="serviceDate">Data</label>
+                    <input type="date" id="serviceDate" name="data" required>
+                </div>
+                <div class="form-group">
+                    <label for="serviceTime">Horário</label>
+                    <select id="serviceTime" name="horario" required>
+                        <option value="08:00h - 12:30h">08:00h - 12:30h (Manhã)</option>
+                        <option value="14:00h - 17:00h">14:00h - 17:00h (Tarde)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="pelagemType">Tipo de Pelagem</label>
+                    <input type="text" id="pelagemType" name="pelagem">
+                </div>
+            </div>
+            <div class="form-row">
+                <button type="submit" class="btn-submit">Solicitar</button>
+            </div>
+        </form>
+    </div>
+
+    
+    <script src="js/service.js"></script>
+</body>
+</html>
